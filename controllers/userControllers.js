@@ -4,13 +4,13 @@ import Product from "../models/product.js";
 import { CronJob } from "cron";
 
 let job = new CronJob(
-    '*/5 */8 * * *',
+    '* * * * *',
     () => console.log(" 8 hours 5 minitues.")
 )
 job.start();
 
 let customJob = new CronJob(
-    '*/10 */9 * * *',
+    '* * * * *',
     () => console.log("nine hours 10 minutes")
 )
 customJob.start();
